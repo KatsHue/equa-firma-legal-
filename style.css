@@ -491,6 +491,26 @@ input[type="checkbox"] {
   nav {
     padding: 0 40px 0 50px;
   }
+
+  .footer-top {
+    grid-template-columns: 1fr; /* Pasa a una columna */
+    gap: 30px;
+    padding-top: 60px;
+    text-align: center;
+    justify-items: center;
+  }
+
+  .footer .logo-text {
+    font-size: 1.6rem;
+  }
+
+  .footer-list .footer-list-title {
+    font-size: 1.4rem;
+  }
+
+  .social-link {
+    font-size: 1.4rem;
+  }
 }
 
 @media (max-width: 920px) {
@@ -596,5 +616,30 @@ input[type="checkbox"] {
   .about-section .about-details .text {
     font-size: 0.95rem;
     line-height: 24px;
+  }
+
+  .footer {
+    padding: 0 15px 20px;
+  }
+
+  .footer .logo-text {
+    font-size: 1.4rem;
+  }
+
+  .footer-list .footer-list-title {
+    font-size: 1.2rem;
+  }
+
+  .social-link {
+    font-size: 1.2rem;
+  }
+
+  .social-list {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .footer-bottom {
+    padding-top: 20px;
   }
 }
