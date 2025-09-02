@@ -29,6 +29,11 @@
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -44,16 +49,13 @@
 
           <ul class="navbar-menu">
             <li class="navbar-list">
-              <a class="navbar-link" href="#">Inicio</a>
+              <a class="navbar-link" href="#home">Inicio</a>
             </li>
             <li class="navbar-list">
-              <a class="navbar-link" href="#">Nosotros</a>
+              <a class="navbar-link" href="#about">Nosotros</a>
             </li>
             <li class="navbar-list">
-              <a class="navbar-link" href="#">Servicios</a>
-            </li>
-            <li class="navbar-list">
-              <a class="navbar-link" href="#">Contacto</a>
+              <a class="navbar-link" href="#services">Servicios</a>
             </li>
           </ul>
         </nav>
@@ -63,7 +65,7 @@
     <main>
       <article>
         <!--HERO-->
-        <section class="section hero">
+        <section class="section hero" id="home">
           <div class="container">
             <div class="hero-content">
               <h1 class="h1 hero-title">
@@ -109,7 +111,7 @@
               />
             </div>
             <div class="about-details">
-              <h2 class="section-title">Conócenos</h2>
+              <h2 class="h2 section-title">Conócenos</h2>
               <p class="text">
                 Somos Equa | Firma Legal, un despacho fundado por dos abogadas
                 que buscan ofrecer asesoría legal práctica, accesible y con
@@ -133,8 +135,279 @@
             </div>
           </div>
         </section>
+
+        <!--SERVICIOS-->
+        <section class="service-section" id="services">
+          <h2 class="h2 section-title-services">Servicios</h2>
+          <div class="container-services swiper">
+            <div class="card-wrapper">
+              <!-- Card slides container -->
+              <ul class="card-list swiper-wrapper">
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="assets/images/lawyers.png"
+                      alt="Card Image"
+                      class="card-image"
+                    />
+                    <p class="badge badge-asesoria">Asesoría Legal Básica</p>
+                    <h2 class="card-title">
+                      Consultas presenciales y en línea
+                    </h2>
+                    <button class="card-button material-symbols-rounded">
+                      <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </button>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="assets/images/lawyers.png"
+                      alt="Card Image"
+                      class="card-image"
+                    />
+                    <p class="badge badge-asesoria">Asesoría Legal Básica</p>
+                    <h2 class="card-title">
+                      Orientación legal preventiva y revisión rápida de
+                      documentos
+                    </h2>
+                    <button class="card-button material-symbols-rounded">
+                      <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </button>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="assets/images/lawyers.png"
+                      alt="Card Image"
+                      class="card-image"
+                    />
+                    <p class="badge badge-contratos">Contratos y documentos</p>
+                    <h2 class="card-title">
+                      Arrendamiento, compraventa, préstamos, confidencialidad
+                    </h2>
+                    <button class="card-button material-symbols-rounded">
+                      <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </button>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="assets/images/lawyers.png"
+                      alt="Card Image"
+                      class="card-image"
+                    />
+                    <p class="badge badge-contratos">Contratos y documentos</p>
+                    <h2 class="card-title">
+                      Avisos de privacidad y términos de servicio
+                    </h2>
+                    <button class="card-button material-symbols-rounded">
+                      <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </button>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="assets/images/lawyers.png"
+                      alt="Card Image"
+                      class="card-image"
+                    />
+                    <p class="badge badge-negocios">
+                      Constitución y regularización de negocios
+                    </p>
+                    <h2 class="card-title">
+                      Creación de sociedades y actas constitutivas
+                    </h2>
+                    <button class="card-button material-symbols-rounded">
+                      <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </button>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="assets/images/lawyers.png"
+                      alt="Card Image"
+                      class="card-image"
+                    />
+                    <p class="badge badge-negocios">
+                      Constitución y regularización de negocios
+                    </p>
+                    <h2 class="card-title">
+                      Asesoría en obligaciones fiscales y laborales
+                    </h2>
+                    <button class="card-button material-symbols-rounded">
+                      <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </button>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="assets/images/lawyers.png"
+                      alt="Card Image"
+                      class="card-image"
+                    />
+                    <p class="badge badge-civil">Derecho familiar y civil</p>
+                    <h2 class="card-title">Divorcios voluntarios</h2>
+                    <button class="card-button material-symbols-rounded">
+                      <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </button>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="assets/images/lawyers.png"
+                      alt="Card Image"
+                      class="card-image"
+                    />
+                    <p class="badge badge-civil">Derecho familiar y civil</p>
+                    <h2 class="card-title">
+                      Juicios de pensión alimenticia y custodia
+                    </h2>
+                    <button class="card-button material-symbols-rounded">
+                      <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </button>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="assets/images/lawyers.png"
+                      alt="Card Image"
+                      class="card-image"
+                    />
+                    <p class="badge badge-civil">Derecho familiar y civil</p>
+                    <h2 class="card-title">Elaboración de testamentos</h2>
+                    <button class="card-button material-symbols-rounded">
+                      <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </button>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="assets/images/lawyers.png"
+                      alt="Card Image"
+                      class="card-image"
+                    />
+                    <p class="badge">Derecho digital y emprendedores</p>
+                    <h2 class="card-title">Registro de marca en IMPI</h2>
+                    <button class="card-button material-symbols-rounded">
+                      <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </button>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="assets/images/lawyers.png"
+                      alt="Card Image"
+                      class="card-image"
+                    />
+                    <p class="badge">Derecho digital y emprendedores</p>
+                    <h2 class="card-title">
+                      Asesoría legal para freelancers y startups
+                    </h2>
+                    <button class="card-button material-symbols-rounded">
+                      <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </button>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="assets/images/lawyers.png"
+                      alt="Card Image"
+                      class="card-image"
+                    />
+                    <p class="badge">Derecho digital y emprendedores</p>
+                    <h2 class="card-title">
+                      Revisión de términos y políticas de e-commerce
+                    </h2>
+                    <button class="card-button material-symbols-rounded">
+                      <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </button>
+                  </a>
+                </li>
+              </ul>
+              <div class="swiper-pagination"></div>
+              <!-- Navigation Buttons -->
+              <div class="swiper-slide-button swiper-button-prev"></div>
+              <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+          </div>
+        </section>
       </article>
     </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container-footer">
+        <div class="section footer-top">
+          <div class="footer-brand">
+            <a href="#" class="logo-text">EQUA | Firma Legal</a>
+
+            <p class="footer-text">
+              Consultoría jurídica especializada para personas y empresas.
+            </p>
+
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-list">
+            <p class="footer-list-title">Contáctanos</p>
+
+            <p class="footer-text">
+              ¿Tienes alguna pregunta o necesitas asesoría legal? Estamos para
+              ayudarte.
+            </p>
+
+            <a href="#" class="btn-inverted">
+              <span class="span">Agenda una cita</span>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">Copyright 2025</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="script.js"></script>
   </body>
