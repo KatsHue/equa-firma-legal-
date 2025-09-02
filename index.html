@@ -15,6 +15,12 @@
 
     <link rel="shortcut icon" href="assets/images/favicon.ico" />
 
+    <!--Icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+
     <!--GoogleFonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,66 +29,37 @@
       rel="stylesheet"
     />
 
-    <!--<link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />-->
-
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <a href="#" class="logo">
-          <img src="assets/images/logo.png" alt="Equa | Firma Legal" />
-        </a>
+    <header>
+      <div class="navbar">
+        <nav>
+          <img class="logo" src="assets/images/logo.png" alt="Logo EQUA" />
 
-        <nav class="navbar" data-navbar>
-          <button
-            class="nav-cloe-btn"
-            aria-label="close menu"
-            data-navbar-toggler
-          >
-            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-          </button>
+          <input type="checkbox" id="click" />
+          <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+          </label>
 
-          <ul class="navbar-list">
-            <li>
-              <a href="#" class="nabvar-link">Inicio</a>
+          <ul class="navbar-menu">
+            <li class="navbar-list">
+              <a class="navbar-link" href="#">Inicio</a>
             </li>
-            <li>
-              <a href="#" class="nabvar-link">Nosotros</a>
+            <li class="navbar-list">
+              <a class="navbar-link" href="#">Nosotros</a>
             </li>
-            <li>
-              <a href="#" class="nabvar-link">Servicios</a>
+            <li class="navbar-list">
+              <a class="navbar-link" href="#">Servicios</a>
             </li>
-            <li>
-              <a href="#" class="nabvar-link">Blog</a>
-            </li>
-            <li>
-              <a href="#" class="nabvar-link">Contacto</a>
+            <li class="navbar-list">
+              <a class="navbar-link" href="#">Contacto</a>
             </li>
           </ul>
         </nav>
-
-        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-        </button>
-
-        <div class="overlay" data-nav-toggler></div>
       </div>
     </header>
+
     <script src="script.js"></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
   </body>
 </html>
